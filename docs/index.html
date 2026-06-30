@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TID Quick Post Template</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="hero">
+
+        <h1>TID Quick Post Template</h1>
+
+        <div class="badge">
+            By FirstKhaotung fan
+        </div>
+
+    </header>
+
+
+    <!-- ================= GUIDE ================= -->
+
+    <section class="card">
+
+        <h2>Usage Guide</h2>
+
+        <ol class="guide">
+
+            <li>
+                Add your unique text, number, or symbol
+            </li>
+
+            <li>
+                Enter main hashtag
+            </li>
+
+            <li>
+                Choose sub hashtags
+                <br>
+                <span class="note">
+                    (Recommended: no more than 3 hashtags in total)
+                </span>
+            </li>
+
+            <li>
+                Click
+                <strong>Generate</strong>
+                to create
+                <strong>10 random posts.</strong>
+            </li>
+
+            <li>
+                Click
+                <strong>Post</strong>
+                on any card to publish it on X.
+            </li>
+
+        </ol>
+
+    </section>
+
+
+    <!-- ================= INPUT ================= -->
+
+    <section class="card">
+
+        <!-- Unique -->
+
+        <div class="field">
+
+            <label>
+
+                Add your number / text / symbol
+                <span class="required">(required, max 10)</span>
+
+            </label>
+
+            <input
+                id="customText"
+                maxlength="10"
+                placeholder="Example: 001 ✨">
+
+        </div>
+
+
+
+        <!-- Main hashtag -->
+
+        <div class="field">
+
+            <label>
+
+                Main hashtag
+                <span class="example">
+                    (ex: #TheInvisibleDragonQ1)
+                </span>
+
+            </label>
+
+            <input
+                id="mainHashtag"
+                maxlength="50"
+                placeholder="#TheInvisibleDragonQ1">
+
+        </div>
+
+
+        <!-- Sub hashtag -->
+
+        <div class="field">
+
+            <label>
+
+                Sub hashtag
+
+            </label>
+
+            <div class="checkbox-group">
+
+                <label class="checkbox-item">
+
+                    <input
+                        type="checkbox"
+                        value="#TheInvisibleDragon">
+
+                    #TheInvisibleDragon
+
+                </label>
+
+
+                <label class="checkbox-item">
+
+                    <input
+                        type="checkbox"
+                        value="#FirstKhaotung">
+
+                    #FirstKhaotung
+
+                </label>
+
+
+                <label class="checkbox-item">
+
+                    <input
+                        type="checkbox"
+                        value="#เฟิร์สข้าวตัง">
+
+                    #เฟิร์สข้าวตัง
+
+                </label>
+
+
+                <label class="checkbox-item">
+
+                    <input
+                        type="checkbox"
+                        value="#FirstKanaphan">
+
+                    #FirstKanaphan
+
+                </label>
+
+
+                <label class="checkbox-item">
+
+                    <input
+                        type="checkbox"
+                        value="#khaotungg">
+
+                    #khaotungg
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Generate -->
+
+        <button id="generateBtn">
+
+            Generate
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= RESULT ================= -->
+
+    <section id="result">
+
+    </section>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
