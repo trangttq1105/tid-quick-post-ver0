@@ -267,6 +267,13 @@ input:focus{
 
 }
 
+.error-message {
+    color: #c0392b;
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: 600;
+}
+
 /* ========================= */
 
 #generateBtn{
@@ -325,6 +332,7 @@ input:focus{
     gap:22px;
 
 }
+
 
 /* ========================= */
 
