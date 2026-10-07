@@ -119,15 +119,40 @@ ${mainHashtag}`;
     card.innerHTML = `
       <p>${postText.replace(/\n/g, "<br>")}</p>
 
-      <a href="${twitterURL}"
-         target="_blank"
-         rel="noopener">
+      const card = document.createElement("div");
 
-        <button>
-          Post
-        </button>
+card.className = "post";
 
-      </a>
+card.innerHTML = `
+  <p>${postText.replace(/\n/g, "<br>")}</p>
+
+  <a href="${twitterURL}"
+     target="_blank"
+     rel="noopener">
+
+    <button>
+      Post
+    </button>
+
+  </a>
+`;
+
+const postLink = card.querySelector("a");
+
+postLink.addEventListener("click", () => {
+
+  if (typeof gtag === "function") {
+
+    gtag("event", "post_to_x", {
+      event_category: "TID Tool",
+      event_label: "Post"
+    });
+
+  }
+
+});
+
+result.appendChild(card);
     `;
 
     result.appendChild(card);
